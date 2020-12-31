@@ -18,8 +18,8 @@ int main(){
     }
 
     for(int i=0; i<n; i++){
-        for(int i=0; i<n-1; i++){
-            swap(arr[i], arr[i+1]);
+        for(int k=0; k<n-1; k++){
+            swap(arr[k], arr[k+1]);
         }
     }
 
