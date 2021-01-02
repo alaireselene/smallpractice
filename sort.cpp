@@ -1,11 +1,12 @@
 #include <iostream>
 using namespace std;
 
-void swap(int a, int b){
-    int temp=a+b;
-    if(a<b){
-        a=temp-a;
-        b=temp-a;
+void swap(float &a, float &b){
+    float temp;
+    if(a>b){
+        temp=a;
+        a=b;
+        b=temp;
     }
 }
 int main(){
@@ -17,7 +18,7 @@ int main(){
         cin >> arr[i];
     }
 
-    for(int i=0; i<n; i++){
+    for(float i=0; i<n; i++){
         for(int k=0; k<n-1; k++){
             swap(arr[k], arr[k+1]);
         }
